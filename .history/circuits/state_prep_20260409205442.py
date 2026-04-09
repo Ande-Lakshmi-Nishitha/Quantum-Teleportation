@@ -3,16 +3,17 @@ import numpy as np
 
 def prepare_state(qc, qubit, state="random"):
     if state == "zero":
-        pass        #passes default |0⟩  
+        pass  # default |0>
+
     elif state == "one":
-        qc.x(qubit) #inverts |0⟩ to |1⟩
+        qc.x(qubit)
+
     elif state == "plus":
-        qc.h(qubit) #applies hadamard on |0⟩ to convert to |+⟩
+        qc.h(qubit)
+
     elif state == "random":
         theta = np.random.uniform(0, np.pi)
         phi = np.random.uniform(0, 2*np.pi)
-        qc.u(theta, phi, 0, qubit)      #created a qubit with a random configuration
-    
-    return qc
+        qc.u(theta, phi, 0, qubit)
 
-    
+    return qc
