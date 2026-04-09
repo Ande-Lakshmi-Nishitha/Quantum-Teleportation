@@ -40,4 +40,3 @@ def run():
         print(f"Noise: {p}, Avg Fidelity: {avg_fidelity:.4f}")
 
     return results
-
