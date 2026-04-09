@@ -12,5 +12,7 @@ def prepare_state(qc, qubit, state="random"):
         theta = np.random.uniform(0, np.pi)
         phi = np.random.uniform(0, 2*np.pi)
         qc.u(theta, phi, 0, qubit)      #created a qubit with a random configuration
-
+    
     return qc
+
+    
