@@ -1,5 +1,6 @@
 import numpy as np
-from qiskit import Aer, transpile
+from qiskit_aer import Aer
+from qiskit import transpile
 from qiskit.quantum_info import Statevector
 from circuits.teleportation import create_teleportation_circuit
 from noise.noise_models import create_noise_model
@@ -40,4 +41,3 @@ def run():
         print(f"Noise: {p}, Avg Fidelity: {avg_fidelity:.4f}")
 
     return results
-
