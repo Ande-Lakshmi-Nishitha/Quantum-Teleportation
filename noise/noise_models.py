@@ -17,7 +17,11 @@ def create_noise_model(p, noise_type="depolarizing"):
     else:
         raise ValueError("Unknown noise type")
 
+<<<<<<< HEAD
     # Applying noise to gates used in circuit
+=======
+    # Apply noise to gates used in circuit
+>>>>>>> 1263375f048e3d5c533fe181844033a3e6268bb8
     noise_model.add_all_qubit_quantum_error(error_1, ['h', 'ry', 'rz'])
     noise_model.add_all_qubit_quantum_error(error_2, ['cx'])
 

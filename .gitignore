@@ -1,0 +1,15 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments (optional)
+venv/
+env/
+
+# Generated results
+results_plot.png
+results.json
+
+# OS files
+.DS_Store
+Thumbs.db
